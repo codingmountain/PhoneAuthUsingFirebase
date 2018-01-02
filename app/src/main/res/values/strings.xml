@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FirebasePhoneAuth</string>
+    <string name="tag_send">send</string>
+    <string name="tag_verify">verify</string>
+</resources>

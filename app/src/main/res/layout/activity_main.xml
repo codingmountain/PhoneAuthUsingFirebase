@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.chintugandhwani.firebasephoneauth.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".3"
+                android:background="@color/colorPrimary"></View>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/offwhile"></View>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight=".6"
+                android:src="@drawable/smartphone" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:padding="15dp"
+                    app:cardBackgroundColor="#FBF7F7"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="30dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingLeft="25dp"
+                            android:paddingRight="25dp">
+
+                            <EditText
+                                android:id="@+id/numbered"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_weight="1"
+                                android:drawableLeft="@drawable/ic_phone_black_24dp"
+                                android:drawablePadding="15dp"
+                                android:hint="Enter mobile number"
+                                android:inputType="phone" />
+
+                            <ImageView
+                                android:id="@+id/verifiedsign"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="15dp"
+                                android:src="@drawable/ic_check_circle_black_24dp"
+                                android:visibility="invisible" />
+
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/verificationed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="25dp"
+                            android:background="@drawable/rect_text_edit"
+                            android:hint="Enter Code"
+                            android:inputType="number"
+                            android:padding="10dp"
+                            android:visibility="invisible" />
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/sendverifybt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:src="@drawable/ic_send_white_24dp"
+                            android:tag="@string/tag_send" />
+
+                        <TextView
+                            android:id="@+id/timertv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="25sp"
+                            android:clickable="true"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
